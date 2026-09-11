@@ -1,0 +1,192 @@
+:root{
+/* ================================================ */
+/* Colors                                           */
+/* ================================================ */
+    /* nutrals */
+    --white:hsl(0, 0%, 100%);
+    --black:hsl(0, 0%, 7%);
+
+
+    /* brand color */
+    --aio-900: hsl(229, 82%, 32%);
+    --aio-800: hsl(229, 82%, 42%);
+    --aio-700: hsl(229, 82%, 52%);
+    --aio-600: hsl(229, 82%, 62%);
+    --aio-500: hsl(229, 100%, 56%);
+    --aio-400: hsl(229, 82%, 80%);
+    --aio-300: hsl(229, 82%, 87%);
+    --aio-200: hsl(229, 82%, 92%);
+    --aio-100: hsl(229, 82%, 96%);
+
+    /* secondary color */
+    /* --aio-900: hsl(145, 40%, 32%);
+    --aio-800: hsl(145, 45%, 42%);
+    --aio-700: hsl(145, 50%, 52%);
+    --aio-600: hsl(145, 55%, 62%);
+    --aio-500: hsl(145, 60%, 72%);
+    --aio-400: hsl(145, 65%, 80%);
+    --aio-300: hsl(145, 70%, 87%);
+    --aio-200: hsl(145, 75%, 92%);
+    --aio-100: hsl(145, 80%, 96%); */
+
+    /* accent color */
+    --orange-900: hsl(27, 100%, 32%);
+    --orange-800: hsl(27, 100%, 42%);
+    --orange-700: hsl(27, 100%, 52%);
+    --orange-600: hsl(27, 100%, 62%);
+    --orange-500: hsl(27, 100%, 60%);
+    --orange-400: hsl(27, 100%, 80%);
+    --orange-300: hsl(27, 100%, 87%);
+    --orange-200: hsl(27, 100%, 92%);
+    --orange-100: hsl(27, 100%, 96%);
+
+    /* gray */
+    --gray-900:hsl(0, 0%, 10%);
+    --gray-800:hsl(0, 0%, 20%);
+    --gray-700:hsl(0, 0%, 30%);
+    --gray-600:hsl(0, 0%, 40%);
+    --gray-500:hsl(0, 0%, 50%);
+    --gray-400:hsl(0, 0%, 60%);
+    --gray-300:hsl(0, 0%, 70%);
+    --gray-200:hsl(0, 0%, 90%);
+    --gray-100:hsl(0, 0%, 96%);
+    --gray-50:hsl(0, 0%, 98%);
+
+    /* blue */
+    --blue-900:hsl(221, 70%, 10%);
+    --blue-800:hsl(221, 70%, 20%);
+    --blue-700:hsl(221, 70%, 30%);
+    --blue-600:hsl(221, 70%, 40%);
+    --blue-500:hsl(221, 70%, 50%);
+    --blue-400:hsl(221, 70%, 60%);
+    --blue-300:hsl(221, 70%, 70%);
+    --blue-200:hsl(221, 70%, 80%);
+    --blue-100:hsl(221, 70%, 90%);
+
+    /* green */
+    --green-900:hsl(108, 69%, 10%);
+    --green-800:hsl(108, 69%, 20%);
+    --green-700:hsl(108, 69%, 30%);
+    --green-600:hsl(108, 69%, 40%);
+    --green-500:hsl(108, 69%, 50%);
+    --green-400:hsl(108, 69%, 60%);
+    --green-300:hsl(108, 69%, 70%);
+    --green-200:hsl(108, 69%, 80%);
+    --green-100:hsl(108, 69%, 90%);
+
+    /* yellow */
+    --yellow-900:hsl(41, 81%, 10%);
+    --yellow-800:hsl(41, 81%, 20%);
+    --yellow-700:hsl(41, 81%, 30%);
+    --yellow-600:hsl(41, 81%, 40%);
+    --yellow-500:hsl(41, 81%, 50%);
+    --yellow-400:hsl(41, 81%, 60%);
+    --yellow-300:hsl(41, 81%, 70%);
+    --yellow-200:hsl(41, 81%, 80%);
+    --yellow-100:hsl(41, 81%, 90%);
+
+    /* red */
+    --red-900:hsl(0, 100%, 10%);
+    --red-800:hsl(0, 100%, 20%);
+    --red-700:hsl(0, 100%, 30%);
+    --red-600:hsl(0, 100%, 40%);
+    --red-500:hsl(0, 100%, 50%);
+    --red-400:hsl(0, 100%, 60%);
+    --red-300:hsl(0, 100%, 70%);
+    --red-200:hsl(0, 100%, 80%);
+    --red-100:hsl(0, 100%, 90%);
+
+
+
+/* ================================================ */
+/* Typography                                        */
+/* ================================================ */
+
+    /* font sizes */
+    --font-size-xs: 0.75rem;    /* 12px */
+    --font-size-sm: 0.875rem;   /* 14px */
+    --font-size-md: 1rem;       /* 16px */
+    --font-size-lg: 1.125rem;   /* 18px */
+    --font-size-xl: 1.25rem;    /* 20px */
+    --font-size-2xl: 1.5rem;    /* 24px */
+    --font-size-3xl: 2rem;      /* 32px */
+    --font-size-4xl: 2.5rem;    /* 40px */
+    --font-size-5xl: 3rem;      /* 48px */
+    --font-size-6xl: 3.5rem;    /* 56px */
+    --font-size-7xl: 4rem;      /* 64px */
+    --font-size-8xl: 5rem;      /* 80px */
+    --font-size-9xl: 7.5rem;    /* 120px */
+
+    --font-vw-100:.5vw;
+    --font-vw-200:1vw;
+    --font-vw-300:2vw;
+    --font-vw-400:3vw;
+    --font-vw-500:4vw;
+    --font-vw-600:5vw;
+    --font-vw-700:6vw;
+    --font-vw-800:9vw;
+    --font-vw-900:12vw;
+
+    /* font weights */
+    --font-weight-100: 100; /* Thin */
+    --font-weight-200: 200; /* Extra Light */
+    --font-weight-300: 300; /* Light */
+    --font-weight-400: 400; /* Regular */
+    --font-weight-500: 500; /* Medium */
+    --font-weight-600: 600; /* Semi Bold */
+    --font-weight-700: 700; /* Bold */
+    --font-weight-800: 800; /* Extra Bold */
+    --font-weight-900: 900; /* Black */
+
+    /* line hight */
+    --leading-none: 1.1;
+    --leading-tight: 1.2;
+    --leading-snug: 1.3;
+    --leading-normal: 1.6;
+    --leading-relaxed: 1.725;
+    --leading-loose: 2.5;
+
+    
+/* ================================================ */
+/* Layouts                                        */
+/* ================================================ */
+
+/* mobile */
+--columns-mobile: 2;
+--rows-mobile: 10;
+
+/* tablet */
+--columns-tablet: 6;
+--rows-tablet: 3;
+
+/* desktop */
+--columns-desktop: 10;
+--rows-desktop: 2;
+
+
+
+
+/* ================================= */
+/* SPACING */
+/* =================================  */
+
+  --space-0: 0;
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.25rem;   /* 20px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-7: 1.75rem;   /* 28px */
+  --space-8: 2rem;      /* 32px */
+  --space-10: 2.5rem;   /* 40px */
+  --space-12: 3rem;     /* 48px */
+  --space-14: 3.5rem;   /* 56px */
+  --space-16: 4rem;     /* 64px */
+  --space-20: 5rem;     /* 80px */
+  --space-24: 6rem;     /* 96px */
+  --space-32: 8rem;     /* 128px */
+  --space-40: 10rem;    /* 160px */
+  --space-48: 12rem;    /* 192px */
+
+}
