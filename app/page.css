@@ -20,45 +20,62 @@
                         repeat(var(--grid-rows),1fr) 
                         var(--margin-inline);
     overflow: hidden;
-    /* place-items: center; */
+    /* place-items: end; */
 
+    --grid-image-width: clamp(
+      300px,50vw,800px
+    );
+    --graphics-width: clamp(
+      200px,30vw,500px
+    );
 }
 
 .grid-image,.android-image,
 .kotlin-image,.grid-image-02{
     position: absolute;
-    scale: .8;
-    /* animation: popIcon 1s cubic-bezier(0.22, 1, 0.36, 1) forwards; */
 }
 .grid-image{
     left:50%;
-    bottom: 10%;
-    transform: translate(-50%,-50%) rotate(160deg);
+    width:var(--grid-image-width);
+    height: auto;
+    transform: 
+    translate(-50%,-50%)
+     rotate(160deg);
     opacity: .4;
 }
 .grid-image-02{
     left:10%;
-    top: 110%;
+    top: 90%;
+    width:var(--grid-image-width);
+    height: auto;
     transform: translate(-50%,-50%) rotate(341deg);
-    opacity: .6;
+    opacity: .4;
 }
 .kotlin-image{
-    bottom:30%;
-    left: -10%;
-    transform: scale(.3) translate(-50%,-50%) rotate(10deg);
+      --graphics-width: clamp(
+      150px,20vw,300px
+    );
+    top:min(5%,50px);
+    left: 10%;
+    width:var(--graphics-width);
+    height: auto;
+    transform:  translate(-50%,-50%) rotate(10deg);
 
 }
 .android-image{
     top:80%;
-    left: 95%;
-    transform:scale(1.2)  translate(-50%,-50%) rotate(-40deg);
+    left: 95%;    
+    width:var(--graphics-width);
+    height: auto;
+    transform: translate(-50%,-50%) rotate(-40deg);
 
 }
 .creaative-icon{
-    grid-column: -2;
-    grid-row:1 ;
-    scale: .8;
+    grid-column: -2/-3;
+    grid-row:2 ;
+    scale: .5;
     margin-top: 1rem;
+    place-self: center end;
     /* align-self: ; */
 }
 
@@ -86,13 +103,14 @@
     animation-delay: .2s;
 }
 .intro h1, h2{
-    --dynamic-size:var(--font-vw-700);
+    --dynamic-size:var(--font-vw-800);
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
     font-size: clamp(
-            var(--font-size-3xl)
+            var(--font-size-lg)
             ,var(--dynamic-size),
             var(--font-size-9xl));
     color: var(--clr-text-brand);
@@ -143,6 +161,10 @@
     --dynamic-size:var(--font-vw-400);
     display: flex;
     flex-direction:row-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* text-wrap: nowrap; */
     font-family: var(--font-zahir);
     font-size: clamp(
             var(--font-size-xs)
@@ -166,10 +188,10 @@
     margin-top: 2rem;
     font-family: var(--font-zahir);
     --dynamic-size:var(--font-vw-500);
-        font-size: clamp(
+    font-size: clamp(
             var(--font-size-md)
             ,var(--dynamic-size),
-            var(--font-size-4xl));
+            var(--font-size-xl));
     padding: clamp(.25rem,1vw,.5rem);
     padding-inline: clamp(1rem,5vw,5rem);
     background-color: var(--clr-fill-primary);
@@ -187,17 +209,21 @@
   animation: slideUpFade 1s cubic-bezier(1,.44,.51,1.01) forwards;
 }
 @media (min-width: 768px) {
-
-
-}
-
-@media (min-width: 1024px) {
     .grid{
     --grid-columns:var(--grid-columns-desktop);
     --grid-rows:var(--grid-rows-desktop);
     --margin-inline :10rem;
     --margin-block :1.5rem;
     }
+.creaative-icon{
+    grid-column: -2/-3;
+    grid-row:1 ;
+    scale: .8;
+  }
+
+}
+
+@media (min-width: 1024px) {
 
 }
 
