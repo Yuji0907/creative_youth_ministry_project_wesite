@@ -1,0 +1,17 @@
+.card-container{
+    height: 100%;
+    background-color: rgb(219, 216, 216);
+    display: inline;
+    border-radius: 1rem;
+    color: var(--clr-text-brand);
+    padding: 2rem;
+}
+.card-title{
+
+}
+.card-text{
+
+}
+.card-graphics{
+
+}
