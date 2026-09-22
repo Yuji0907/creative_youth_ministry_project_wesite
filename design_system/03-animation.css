@@ -1,0 +1,49 @@
+@keyframes popIcon {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
+}
+@keyframes slideUp {
+    from {
+        margin-top: 100px;
+      /* transform: translateY(4rem); */
+      filter: blur(2);
+      opacity: 0;
+    }
+    to {
+    /* transform: auto; */
+        margin-top: 0px;
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes buttonpop {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0);
+    filter: blur(10);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}

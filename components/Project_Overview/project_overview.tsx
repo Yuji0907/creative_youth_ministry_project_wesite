@@ -11,7 +11,7 @@ const ProjectOverview = (props: Props) => {
     <div className='grid'>
         <section className='project-graphics'>
             <article className='graphics-container'>
-                <Card title='التعلّم' text='و الذكاء الإصطناعيKotlin تعلم '>
+                <Card title='البناء' text='ابن تطبيقك و حوله إلى منتج '>
                     <Image
                         src={buildImage}
                         alt="sads"
@@ -25,7 +25,7 @@ const ProjectOverview = (props: Props) => {
                         className="dev-image"
                         />
                 </Card>
-                <Card title='التعلّم' text='و الذكاء الإصطناعيKotlin تعلم '>
+                <Card title='التســــويـــــــــــــــق' text='سوّق فكرتك و خلّيها توصل'>
                     <Image
                         src={marketingImage}
                         alt="sads"
