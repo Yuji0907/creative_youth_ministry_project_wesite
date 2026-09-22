@@ -1,17 +1,39 @@
 .card-container{
     height: 100%;
-    background-color: rgb(219, 216, 216);
-    display: inline;
+    background-color: var(--clr-bg-elevated);
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: right;
     border-radius: 1rem;
     color: var(--clr-text-brand);
-    padding: 2rem;
+    box-shadow: 8px 8px 10px var(--gray-200);
+    padding: clamp(1rem,4vw,2rem) ;
+    overflow: hidden;
+    position: relative;
+
+    img{
+        position: absolute;
+        width: 60%;
+        height: auto;
+    }
 }
 .card-title{
-
+    --dynamic-size:var(--font-vw-600);
+    font-size: clamp(
+            var(--font-size-xs)
+            ,var(--dynamic-size),
+            var(--font-size-5xl));
 }
 .card-text{
-
-}
+    font-family: var(--font-zahir);
+    color: var(--clr-text-primary);
+    --dynamic-size:var(--font-vw-200);
+    font-size: clamp(
+            var(--font-size-xs)
+            ,var(--dynamic-size),
+            var(--font-size-xl));
+}   
 .card-graphics{
 
 }

@@ -1,15 +1,21 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 import "./card.css"
-type Props = {}
+type Props = {
+  title:string,
+  text:string,
+  children?:ReactNode
+}
 
 const Card = (props: Props) => {
   return (
     <div className='card-container'>
         <div>
-        <h1 className='card-title'>text</h1>
-        <p className='card-text'>text</p>
+        <h1 className='card-title'>{props.title}</h1>
+        <p className='card-text'>{props.text}</p>
         </div>
-        <div className='card-graphics'></div>
+        <div className='card-graphics'>
+          {props.children}
+        </div>
     </div>
   )
 }

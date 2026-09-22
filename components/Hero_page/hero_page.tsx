@@ -17,16 +17,8 @@ export default function HeroPage() {
               src={androidImage}
               alt="sads"
         />
-        <Image
-              className="grid-image"
-              src={gridImage}
-              alt="sads"
-        />
-        <Image
-              className="grid-image-02"
-              src={gridImage}
-              alt="sads"
-        />
+
+
         <Image
               className="kotlin-image"
               src={kotlinImage}

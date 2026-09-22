@@ -6,8 +6,7 @@
 .grid{
     position: relative;
     display: grid;
-    min-height: 100vh;
-    background-color: var(--clr-bg);
+    max-height: 100vh;
     --margin-inline :1.5rem;
     --margin-block :1.5rem;
     --grid-columns:var(--grid-columns-mobile);
@@ -34,23 +33,7 @@
 .kotlin-image,.grid-image-02{
     position: absolute;
 }
-.grid-image{
-    left:50%;
-    width:var(--grid-image-width);
-    height: auto;
-    transform: 
-    translate(-50%,-50%)
-     rotate(160deg);
-    opacity: .4;
-}
-.grid-image-02{
-    left:10%;
-    top: 90%;
-    width:var(--grid-image-width);
-    height: auto;
-    transform: translate(-50%,-50%) rotate(341deg);
-    opacity: .4;
-}
+
 .kotlin-image{
       --graphics-width: clamp(
       150px,20vw,300px
@@ -183,6 +166,7 @@
     gap:1rem;
     grid-column: 6/-6;
     grid-row:-2/-1 ;
+    scale: .5;
 }
 .cta{
     margin-top: 2rem;

@@ -3,6 +3,25 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  position: relative;
+  background-color: var(--clr-bg);
+
+
+  .grid-image{
+    width: min(100vw, 700px);
+    height: auto;
+    position: absolute;
+      transform: translate(-50%,-50%) rotate(341deg);
+      opacity: .2;
+}
+  .g-02{
+    top:100vh;
+  }
+  .g-01{
+    top:-5%;
+    left:50vw;
+    transform: translate(-50%,-50%) rotate(250deg);
+  }
 }
 
 
