@@ -165,7 +165,7 @@
     justify-content: center;
     gap:1rem;
     grid-column: 6/-6;
-    grid-row:-2/-1 ;
+    grid-row:-3/-1 ;
     scale: .5;
 }
 .cta{
@@ -208,7 +208,10 @@
 }
 
 @media (min-width: 1024px) {
+.flex-group{
 
+    grid-row:-2/-1 ;
+}
 }
 
 @media (min-width: 1440px) {
